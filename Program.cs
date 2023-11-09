@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Recruitment.Data;
 var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<RecruitmentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitmentContext") ?? throw new InvalidOperationException("Connection string 'RecruitmentContext' not found.")));
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitmentContext") ?? throw new InvalidOperationException("Connection string 'RecruitmentContext' not found.")));
 
 // Add services to the container.
 
