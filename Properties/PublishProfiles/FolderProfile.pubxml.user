@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\kubab\source\repos\Recruitment\Recruitment\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-11-09T16:01:04.0615143Z;True|2023-11-09T16:50:45.6552594+01:00;True|2023-11-09T16:46:46.2841361+01:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="RecruitmentContext">
+      <Value>Server=34.88.243.207%3bDatabase=test%3bUser Id=sqlserver%3bPassword=bazatestowa1%401!%3bTrustServerCertificate=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
