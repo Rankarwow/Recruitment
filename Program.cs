@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 /*builder.Services.AddDbContext<RecruitmentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitmentContext") ?? throw new InvalidOperationException("Connection string 'RecruitmentContext' not found.")));*/
 // Add services to the container.
-builder.Services.AddDbContext<RecruitmentContext>(db => db.UseInMemoryDatabase("Test"));
+builder.Services.AddDbContext<RecruitmentContext>(db => db.UseInMemoryDatabase("Test")); 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
