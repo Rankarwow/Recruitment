@@ -13,7 +13,6 @@ namespace Recruitment.Data
             : base(options)
         {
         }
-
         public DbSet<User> User { get; set; } = default!;
     }
 }

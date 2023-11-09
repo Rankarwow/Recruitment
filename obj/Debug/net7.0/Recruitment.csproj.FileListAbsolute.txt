@@ -252,3 +252,4 @@ C:\Users\kubab\source\repos\Recruitment\Recruitment\obj\Debug\net7.0\refint\Recr
 C:\Users\kubab\source\repos\Recruitment\Recruitment\obj\Debug\net7.0\Recruitment.pdb
 C:\Users\kubab\source\repos\Recruitment\Recruitment\obj\Debug\net7.0\Recruitment.genruntimeconfig.cache
 C:\Users\kubab\source\repos\Recruitment\Recruitment\obj\Debug\net7.0\ref\Recruitment.dll
+C:\Users\kubab\source\repos\Recruitment\Recruitment\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O1u7xaENI1IVZQAPaUN7uR7vUA24IZQVs55dNV/DALC+lVXiFtJdYEV9g6Zyo2A8MkGgVCgT48xKB1dNJ9WTBg==",
+  "dgSpecHash": "TfMHxHkbAMgG6gW01Iq6l5VYPLgTzGb4Pews7JU6aDzWAPjK12PltsRk4oa2rbL3bu7K0T9Ynei6RdFx79YuFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kubab\\source\\repos\\Recruitment\\Recruitment\\Recruitment.csproj",
   "expectedPackageFiles": [
@@ -77,10 +77,11 @@
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.diasymreader\\1.4.0\\microsoft.diasymreader.1.4.0.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\7.0.9\\microsoft.dotnet.scaffolding.shared.7.0.9.nupkg.sha512",
-    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
-    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
-    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.12\\microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
+    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
+    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
+    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.12\\microsoft.entityframeworkcore.design.7.0.12.nupkg.sha512",
+    "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.13\\microsoft.entityframeworkcore.inmemory.7.0.13.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.12\\microsoft.entityframeworkcore.relational.7.0.12.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.12\\microsoft.entityframeworkcore.sqlserver.7.0.12.nupkg.sha512",
     "C:\\Users\\kubab\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.12\\microsoft.entityframeworkcore.tools.7.0.12.nupkg.sha512",

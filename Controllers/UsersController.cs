@@ -20,26 +20,38 @@ namespace Recruitment.Controllers
         {
             _context = context;
         }
-
-        // GET: api/Users
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUser()
+        // post a single user
+        [HttpPost]
+        public async Task<ActionResult<User>> PostUser(User user)
         {
-          if (_context.User == null)
-          {
-              return NotFound();
-          }
+            if (_context.User == null)
+            {
+                return Problem("Entity set 'RecruitmentContext.User'  is null.");
+            }
+            _context.User.Add(user);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+        }
+        //get all users
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        {
+            if (_context.User == null)
+            {
+                return NotFound();
+            }
             return await _context.User.ToListAsync();
         }
 
-        // GET: api/Users/5
+        // Get a single user
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-          if (_context.User == null)
-          {
-              return NotFound();
-          }
+            if (_context.User == null)
+            {
+                return NotFound();
+            }
             var user = await _context.User.FindAsync(id);
 
             if (user == null)
@@ -49,9 +61,41 @@ namespace Recruitment.Controllers
 
             return user;
         }
+        //get by mail
+        [HttpGet("getbyemail/{email}")]
+        public async Task<ActionResult<User>> GetUserByEmail(string email)
+        {
+            if (_context.User == null)
+            {
+                return NotFound();
+            }
+            var user = _context.User.SingleAsync(x => x.Email == email);
 
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return await user;
+        }
+        //get by phone
+        [HttpGet("getbyphone/{phone}")]
+        public async Task<ActionResult<User>> GetUserByPhone(string phone)
+        {
+            if (_context.User == null)
+            {
+                return NotFound();
+            }
+            var user = _context.User.SingleAsync(x => x.PhoneNumber == phone);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return await user;
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
@@ -81,22 +125,9 @@ namespace Recruitment.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
-        {
-          if (_context.User == null)
-          {
-              return Problem("Entity set 'RecruitmentContext.User'  is null.");
-          }
-            _context.User.Add(user);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
-        }
 
-        // DELETE: api/Users/5
+        // delete single user by id
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
